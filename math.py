@@ -134,3 +134,35 @@ def factors(n):
         i = i+1
     return factors
 
+
+
+def Josephus_permutation(n,k):
+    array = [i for i in range(n)]
+    i = -1
+    while len(array) > 1:
+        print(array)
+        i = (i + k) % len(array)
+        del array[i]
+        i -= 1
+    
+    return array[0]
+
+
+
+
+def isRightTruncablePrime(n):
+    while isPrime(n):
+        n = int(n/10)
+    return n == 0
+
+
+import math
+def isLeftTruncablePrime(n):
+    while isPrime(n):
+        a = 10**int(math.log(n)/math.log(10))
+        while n >= a:
+            n -= a
+    isLeft = n == 0
+
+
+
