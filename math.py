@@ -58,7 +58,7 @@ def sieve(n):
 
 
 """
-Miller–Rabin primality test
+Miller–Rabin primarity test
 """
 import random
 
@@ -163,6 +163,5 @@ def isLeftTruncablePrime(n):
         while n >= a:
             n -= a
     isLeft = n == 0
-
 
 
