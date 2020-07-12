@@ -45,8 +45,7 @@ Sieve of eratosthenes.
 Returns all primes for 2 to n (exclusive).
 """
 def sieve(n):
-    nums = range(2,n)
-
+    nums = [i for i in range(2,n)]
     for i in nums:
         if i == 0:
             continue
