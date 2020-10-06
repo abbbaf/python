@@ -94,7 +94,7 @@ Returns the gcd of two numbers.
 This functions handles also 0 for each or both of the arguments
 """
 def gcd(a,b):
-    return gcd(b,a % b) if a % (b or 1) else (b or a)
+    return gcd(b,a % b) if b else a
 
 
 """
